@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-instrument-serif);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Utility classes for scrollbar hiding */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+/* Optimized select dropdown styling */
+select {
+  /* Custom styling for select elements */
+  background-image: none;
+  background-color: white;
+}
+
+select option {
+  /* Styling for dropdown options */
+  padding: 12px 16px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #374151;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover state for options (works in some browsers) */
+select option:hover {
+  background-color: #f3f4f6;
+}
+
+/* Selected option styling */
+select option:checked,
+select option:focus {
+  background-color: #8B4513;
+  color: white;
+  font-weight: 500;
+}
+
+/* Focus state for select element */
+select:focus option:checked {
+  background-color: #8B4513;
+  color: white;
+}
+
+/* Better styling for select dropdown in Firefox */
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+/* Improved dropdown appearance */
+select option {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+/* Hero heading responsive line-height */
+.hero-heading {
+  line-height: 1.3; /* For mobile (48px font size) */
+}
+
+@media (min-width: 768px) {
+  .hero-heading {
+    line-height: 1.05; /* For desktop (80px font size) */
+  }
+}
