@@ -1,21 +1,32 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "LuxuryEstate - Premium Property Investment Platform",
+  "short_name": "LuxuryEstate",
+  "description": "Invest in premium properties across the world's fastest-growing cities. LuxuryEstate offers luxury real estate investments blending innovation, elegance, and lasting returns.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#8B4513",
+  "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/web-app-manifest-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable"
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
     },
     {
-      "src": "/web-app-manifest-512x512.png",
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "display": "standalone"
+  "categories": ["business", "finance", "real estate"],
+  "lang": "en-US",
+  "dir": "ltr"
 }

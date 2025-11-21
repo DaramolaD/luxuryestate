@@ -36,6 +36,7 @@ export const metadata: Metadata = {
     statusBarStyle: "default",
     title: "LuxuryEstate",
   },
+  manifest: "/manifest.json",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
